@@ -1,19 +1,16 @@
-# Getting Started
-Install the dependencies and run the project
-```
-npm install
-npm start
-```
+# __Password Generator App__
+- App still in progress - will allow users to easily find the perfect van for their next road trip. 
+- Built with: React, JS, CSS, HTML
+- Check out my app at <a href="https://travel-van-finder.netlify.app/">__travel-van-finder.netlify.app__</a>
 
-Head over to https://vitejs.dev/ to learn more about configuring vite
-## About Scrimba
+<img src="https://github.com/user-attachments/assets/42bebecb-170e-4b13-a627-8186f9b4292b" alt="Project Hero Image" width="620">
+<br/>
 
-At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
-If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
-The Frontend Developer Career Path aims to teach you everything you need to become a Junior Developer, or you could take a deep-dive with one of our advanced courses 🚀
+## __Skills Applied__
+- React and React Router
+- Responsive Web Design
+<br/> <br/>
 
-- [Our courses](https://scrimba.com/allcourses)
-- [The Frontend Career Path](https://scrimba.com/learn/frontend)
-- [Become a Scrimba Pro member](https://scrimba.com/pricing)
-
-Happy Coding!
+##
+### __Thank you for checking out my work.__
+Let's connect on <a href="https://www.linkedin.com/in/filip-herbst/">__LinkedIn!__</a>
