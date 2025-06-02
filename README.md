@@ -1,7 +1,8 @@
-# __Password Generator App__
+# __Travel Van Finder__
 - App still in progress - will allow users to easily find the perfect van for their next road trip. 
 - Built with: React, JS, CSS, HTML
 - Check out my app at <a href="https://travel-van-finder.netlify.app/">__travel-van-finder.netlify.app__</a>
+<br/>
 
 <img src="https://github.com/user-attachments/assets/42bebecb-170e-4b13-a627-8186f9b4292b" alt="Project Hero Image" width="620">
 <br/>
