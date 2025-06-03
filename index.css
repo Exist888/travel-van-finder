@@ -30,16 +30,18 @@ a, button, .link-button {
     text-align: center;
 }
 
-button, 
-.link-button {
+button, .link-button {
     font-family: inherit;
     border-radius: 3px;
     transition: transform 0.2s ease-in-out;
 }
 
-button:active, 
-.link-button:active {
+button:active, .link-button:active {
     transform: scale(0.95);
+}
+
+.van-type-chip {
+    text-transform: capitalize;
 }
 
 
@@ -117,7 +119,8 @@ header nav a:focus {
     color: #fff;
 }
 
-.hero-section .link-button {
+.hero-section .link-button,
+.single-van-section button {
     width: 100%;
     font-weight: 600;
     background-color: #ffac70;
@@ -131,7 +134,7 @@ header nav a:focus {
 
 /* ABOUT SECTION */
 .about-section-image-placeholder {
-    background-image: url("assets/about-image-2.png");
+    background-image: url("assets/about-image.png");
     width: 100%;
     height: 300px;
     background-color: #25252575;
@@ -166,6 +169,136 @@ header nav a:focus {
 }
 
 
+/* VANS LIST SECTION */
+/* INCLUDES OVERLAPPING STYLS WITH SINGLE VAN SECTION */
+.vans-list-section {
+    padding: 1em 0;
+}
+
+.vans-list-section h1 {
+    font-size: 2rem;
+}
+
+.vans-list-section h2 {
+    font-size: 1.125rem;
+    margin: 0.5em 0 0;
+}
+
+.vans-list-section .vans-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.75em 1.5em;
+    padding: 1em 0 2em;
+}
+
+.van-card img {
+    display: flex;
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+.van-card-inner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.van-card .van-type-chip,
+.single-van-section .van-type-chip {
+    margin-top: 0.375em;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.375em 0.75em;
+    display: block;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.van-card .van-type-chip.simple,
+.single-van-section .van-type-chip.simple {
+    background-color: #e17654;
+} 
+
+.van-card .van-type-chip.rugged,
+.single-van-section .van-type-chip.rugged {
+    background-color: #115e59;
+}
+
+.van-card .van-type-chip.luxury,
+.single-van-section .van-type-chip.luxury {
+    background-color: #151515;
+}
+
+.van-card .price {
+    margin-top: 3em;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+.van-card p {
+    line-height: 0.25;
+    text-align: left;
+}
+
+.van-card-link {
+    cursor: pointer;
+    text-decoration: none;
+    color: #151515;
+}
+
+.van-card-link img {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.van-card-link img:hover {
+    opacity: 0.75;
+}
+
+
+/* SINGLE VAN SECTION */
+.single-van-section {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 0 3em;
+}
+
+.single-van-section h1 {
+    margin-bottom: 0.375em;
+}
+
+.single-van-section img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.single-van-section .van-type-chip {
+    margin-top: 1.25em;
+    font-size: 0.875rem;
+}
+
+.single-van-price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0.5em 0;
+}
+
+.single-van-price span {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.single-van-section p {
+    margin-top: 0;
+    
+}
+
+.loading-notification {
+    font-size: 1.5rem;
+}
 
 
 /* FOOTER */
@@ -181,7 +314,19 @@ footer .elements-container {
     align-items: center;
 }
 
+
 /* MEDIA QUERIES */
+@media screen and (min-width: 400px) {
+    .van-card-inner-container {
+        flex-direction: row;
+    }
+    
+    .van-card p {
+        text-align: right;
+    }
+}
+
+
 @media screen and (min-width: 500px) {
     .hero-section {
         background-color: #25252575;
@@ -190,10 +335,20 @@ footer .elements-container {
     button {
         width: unset;        
         margin-top: 1em;
+        max-width: fit-content;
     }
     
     .link-button {
         max-width: fit-content;
+    }
+    
+    .vans-list-section .vans-list {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .vans-list-section .van-type-chip,
+    .single-van-section .van-type-chip {
+        width: fit-content;
     }
 }
 
@@ -207,8 +362,7 @@ footer .elements-container {
         font-size: 1.125rem;
     }
     
-    button, 
-    .link-button {
+    button, .link-button {
         font-size: 1.125rem;
     }
     
@@ -228,7 +382,19 @@ footer .elements-container {
         padding: 8em 0;
     }
     
+    .vans-list-section .vans-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
     footer p {
         font-size: 1rem;
+    }
+}
+
+
+@media screen and (min-width: 900px) {
+    .single-van-section {
+        flex-direction: row;
+        gap: 1.5em;
     }
 }
