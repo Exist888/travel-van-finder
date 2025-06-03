@@ -1,10 +1,10 @@
 # __Travel Van Finder__
-- App still in progress - will allow users to easily find the perfect van for their next road trip. 
+- App still in progress - mockup of a van rental site to practice React and React Router. 
 - Built with: React, JS, CSS, HTML
 - Check out my app at <a href="https://travel-van-finder.netlify.app/">__travel-van-finder.netlify.app__</a>
 <br/>
 
-<img src="https://github.com/user-attachments/assets/42bebecb-170e-4b13-a627-8186f9b4292b" alt="Project Hero Image" width="620">
+<img src="https://github.com/user-attachments/assets/57a701ad-c59d-4c2e-a36d-17c9b25bc761" alt="Project Hero Image" width="620">
 <br/>
 
 ## __Skills Applied__
