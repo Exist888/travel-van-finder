@@ -25,10 +25,16 @@ export function Vans() {
         );
     });
     
-    return (
+    return vans ? (
         <section className="vans-list-section elements-container">
             <h1>Explore our van options</h1>
             <div className="vans-list">{vansJsx}</div>
         </section>
+    ) : (
+        <span 
+            className="loading-notification vans-list-section elements-container"
+            >
+            Loading...
+        </span>
     );
 }

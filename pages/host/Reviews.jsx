@@ -1,5 +1,7 @@
 export function Reviews() {
     return (
-        <h1>Reviews goes here</h1>
+        <div className="elements-container">
+            <h1>Reviews go here</h1>
+        </div>
     );
 }

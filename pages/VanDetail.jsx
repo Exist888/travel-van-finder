@@ -11,7 +11,7 @@ export function VanDetail() {
         .then(data => {
             console.log(data.vans);
             setVan(data.vans);
-        })
+        });
     }, [params.id]);
     
     function handleClick() {
